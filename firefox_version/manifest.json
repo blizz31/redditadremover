@@ -1,0 +1,38 @@
+{
+
+	"manifest_version": 2,
+	"name": "Reddit Ad Remover",
+	"version": "1.1.4",
+
+	"description": "Removes Reddit 'promoted' posts and advertisements in the feed and sidebar.",
+
+	"icons": {
+		"48": "icons/RAR_icon_v1_48.png"
+	},
+	
+	"options_ui": {
+	  "page": "options.html",
+	  "browser_style": true
+	},	
+	
+	"permissions": ["storage", "*://*.reddit.com/*", "contextMenus"],
+	
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": {
+			"48": "icons/RAR_icon_v1_48.png",
+			"96": "icons/RAR_icon_v1_96.png"
+		}
+	},	
+	
+	"content_scripts": [
+	{
+		"matches": ["*://*.reddit.com/*"],
+		"js": ["removeads.js"],
+		"run_at": "document_start",
+		"all_frames": true,
+		"match_about_blank": true
+	}
+	]
+
+}
