@@ -5,7 +5,7 @@ function apply() {
 
 	var hostname = window.location.hostname;
 	
-	var css = "#adunit{display:none !important;}.promotedlink{display:none;}.avKlJzxZU3brq4nAX0_i1{display:none;}._1G4yU68P50vRZ4USXfaceB{display:none;}.premium-banner-outer{display:none;}";
+	var css = "#adunit{display:none !important;}.promotedlink{display:none;}.avKlJzxZU3brq4nAX0_i1{display:none;}._1G4yU68P50vRZ4USXfaceB{display:none;}.premium-banner-outer{display:none;}shreddit-comment-tree-ad{display:none !important;}";
 	
 	var cssLink = document.getElementById("reddit-ad-remover");
 	if (hostname.includes("reddit")) {		
@@ -24,7 +24,8 @@ function apply() {
 			cssLink.textContent = css;
 			return;
 		}				
-	} 
+	}
+	
 }
 
 window.onload = (event) => {

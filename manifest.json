@@ -2,9 +2,9 @@
 
 	"manifest_version": 2,
 	"name": "Reddit Ad Remover",
-	"version": "1.1.4",
+	"version": "1.1.5",
 
-	"description": "Removes Reddit 'promoted' posts and advertisements in the feed and sidebar.",
+	"description": "Removes Reddit 'promoted' posts and advertisements in the feed, sidebar and comment section",
 
 	"icons": {
 		"48": "icons/RAR_icon_v1_48.png"
